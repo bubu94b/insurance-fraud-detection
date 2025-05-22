@@ -4,6 +4,7 @@ import pandas as pd
 import os
 from io import StringIO
 
+# Load Azure connection string securely from .env file (not exposed in code)
 def load_data():
     load_dotenv()
     conn_str = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
